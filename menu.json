@@ -1,0 +1,84 @@
+{
+    "categories": [
+        {
+            "name": "Starters",
+            "items": [
+                {
+                    "name": "Stuffed Mushrooms",
+                    "description": "Button mushrooms stuffed with herbed cream cheese and breadcrumbs",
+                    "price": 989
+                },
+                {
+                    "name": "Spinach Artichoke Dip",
+                    "description": "Creamy dip with spinach, artichokes, and three cheeses served with pita chips",
+                    "price": 1070
+                },
+                {
+                    "name": "Caprese Skewers",
+                    "description": "Fresh mozzarella, cherry tomatoes, and basil drizzled with balsamic glaze",
+                    "price": 890
+                }
+            ]
+        },
+        {
+            "name": "Main Courses",
+            "items": [
+                {
+                    "name": "Eggplant Parmesan",
+                    "description": "Breaded eggplant layered with marinara and melted mozzarella",
+                    "price": 1800
+                },
+                {
+                    "name": "Mushroom Wellington",
+                    "description": "Portobello mushrooms in puff pastry with spinach and goat cheese",
+                    "price": 2200
+                },
+                {
+                    "name": "Butternut Squash Risotto",
+                    "description": "Creamy Arborio rice with roasted butternut squash and sage",
+                    "price": 1900
+                }
+            ]
+        },
+        {
+            "name": "Desserts",
+            "items": [
+                {
+                    "name": "Vegan Chocolate Cake",
+                    "description": "Rich chocolate cake made without animal products",
+                    "price": 890
+                },
+                {
+                    "name": "Fruit Sorbet",
+                    "description": "Seasonal fruit sorbet with fresh berries",
+                    "price": 800
+                },
+                {
+                    "name": "Apple Crumble",
+                    "description": "Warm spiced apples with oat crumble topping",
+                    "price": 999
+                }
+            ]
+        },
+        {
+            "name": "Drinks",
+            "items": [
+                {
+                    "name": "Organic Wine Selection",
+                    "description": "Glass of our premium organic red or white wine",
+                    "price": 999
+                },
+                {
+                    "name": "Fresh Juices",
+                    "description": "Cold-pressed seasonal fruit and vegetable juices",
+                    "price": 699
+                },
+                {
+                    "name": "Herbal Infusions",
+                    "description": "Selection of organic herbal teas",
+                    "price": 499
+                }
+            ]
+        }
+    ]
+}

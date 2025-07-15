@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Elegante - Fine Dining Experience</title>
+    <link rel="icon" type="image/png" href="https://postimg.cc/K19WS1rk/image"> <!-- Favicon -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Bistro Elegante</h1>
+                <p>Fine Dining Experience</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reservations">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Vegetarian Excellence</h2>
+                <p>Experience the art of plant-based fine dining</p>
+                <a href="#reservations" class="btn">Reserve a Table</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-categories">
+                    <!-- Menu will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>Founded in 1995, Bistro Elegante has been serving gourmet cuisine with a modern twist. Our chef, with over 20 years of international experience, creates dishes that blend traditional techniques with innovative flavors.</p>
+                <div class="gallery">
+                    <img src="https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg" alt="Restaurant interior">
+                    <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" alt="Chef preparing dish">
+                    <img src="https://static1.squarespace.com/static/516411ffe4b032c4bb3b62e3/55ae9200e4b0c3f14efb3ccc/5f5b83d680f28956203c8216/1745504458604/amirali-mirhashemian-R02KgL5Ti3Y-unsplash.jpg?format=1500w" alt="Signature dish">
+                </div>
+            </div>
+        </section>
+
+        <section id="reservations" class="reservation-section">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <form id="reservation-form" action="https://formspree.io/f/xldleenz" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7+">7+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special Requests:</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    
+                    <!-- Formspree hidden fields -->
+                    <input type="hidden" name="_subject" value="New Reservation at Bistro Elegante">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <button type="submit" class="btn">Book Table</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Gourmet Street, Foodville, FV 12345</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>info@bistroelegante.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-clock"></i>
+                        <p>Open Tuesday-Sunday: 5PM-11PM</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Bistro Elegante. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
