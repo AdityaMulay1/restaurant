@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro Elegante - Fine Dining Experience</title>
-    <link rel="icon" type="image/png" href="https://postimg.cc/K19WS1rk/image"> <!-- Favicon -->
+    <title>Bistro Elegante - Michelin-Starred Fine Dining | Manhattan</title>
+    <meta name="description" content="Experience award-winning contemporary cuisine at Bistro Elegante, Manhattan's premier fine dining destination. Michelin-starred chef Jean Baptiste creates exceptional plant-forward dishes with seasonal ingredients.">
+    <meta name="keywords" content="fine dining, Manhattan restaurant, Michelin star, contemporary cuisine, tasting menu, wine pairing, special occasion dining">
+    <meta property="og:title" content="Bistro Elegante - Michelin-Starred Fine Dining">
+    <meta property="og:description" content="Award-winning contemporary cuisine in the heart of Manhattan">
+    <meta property="og:image" content="https://example.com/bistro-elegante-hero.jpg">
+    <link rel="icon" type="image/png" href="https://postimg.cc/K19WS1rk/image">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <h1>Bistro Elegante</h1>
-                <p>Fine Dining Experience</p>
+                <p>★ Michelin Starred Excellence</p>
             </div>
             <button class="menu-toggle" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
@@ -21,8 +28,10 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menus</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#chef">Chef</a></li>
+                    <li><a href="#events">Private Events</a></li>
                     <li><a href="#reservations">Reservations</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -30,112 +39,447 @@
         </div>
     </header>
 
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <p><i class="fas fa-award"></i> <strong>James Beard Award Winner 2024</strong> • Now accepting reservations for our exclusive 12-course winter tasting menu</p>
+        </div>
+    </div>
+
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Vegetarian Excellence</h2>
-                <p>Experience the art of plant-based fine dining</p>
-                <a href="#reservations" class="btn">Reserve a Table</a>
+                <span class="hero-subtitle">Est. 1995 • Manhattan's Premier Destination</span>
+                <h2>Contemporary Cuisine<br>Redefined</h2>
+                <p>Where culinary artistry meets sustainable luxury in an intimate 45-seat dining room</p>
+                <div class="hero-buttons">
+                    <a href="#reservations" class="btn btn-primary">Reserve Your Table</a>
+                    <a href="#menu" class="btn btn-secondary">View Tasting Menus</a>
+                </div>
+                <div class="hero-awards">
+                    <span>★ Michelin Star</span>
+                    <span>AAA Five Diamond</span>
+                    <span>James Beard Award</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <h3>Featured in The New York Times</h3>
+                        <blockquote>
+                            "Chef Baptiste has created something truly extraordinary—a dining experience that transcends the ordinary and enters the realm of art. Every dish tells a story, every flavor is a revelation."
+                        </blockquote>
+                        <cite>— Pete Wells, NYTimes Restaurant Critic</cite>
+                    </div>
+                    <div class="featured-rating">
+                        <div class="stars">★★★★</div>
+                        <p>Four Stars</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="menu" class="menu-section">
             <div class="container">
-                <h2>Our Menu</h2>
-                <div class="menu-categories">
-                    <!-- Menu will be populated by JavaScript -->
+                <div class="section-header">
+                    <h2>Culinary Experiences</h2>
+                    <p>Our seasonally-inspired menus showcase the finest ingredients sourced from local farms and artisanal producers</p>
+                </div>
+                
+                <div class="menu-options">
+                    <div class="menu-option featured">
+                        <div class="menu-header">
+                            <h3>Chef's Tasting Menu</h3>
+                            <span class="price">$195</span>
+                        </div>
+                        <p class="menu-description">A 12-course journey through Chef Baptiste's seasonal inspirations, featuring our signature dishes and innovative creations</p>
+                        <div class="menu-details">
+                            <span><i class="fas fa-clock"></i> 3.5 hours</span>
+                            <span><i class="fas fa-wine-glass"></i> Wine pairing available (+$95)</span>
+                        </div>
+                        <div class="sample-dishes">
+                            <h4>Tonight's Featured Courses Include:</h4>
+                            <ul>
+                                <li>Hokkaido Scallops with cauliflower purée and caviar</li>
+                                <li>Heritage beets, goat cheese mousse, pistachio crumble</li>
+                                <li>Duck breast, cherry gastrique, forbidden rice</li>
+                                <li>Chocolate soufflé, Madagascar vanilla bean ice cream</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-option">
+                        <div class="menu-header">
+                            <h3>Seasonal Menu</h3>
+                            <span class="price">$135</span>
+                        </div>
+                        <p class="menu-description">A 7-course exploration of winter's finest ingredients, highlighting our commitment to sustainability and local sourcing</p>
+                        <div class="menu-details">
+                            <span><i class="fas fa-clock"></i> 2.5 hours</span>
+                            <span><i class="fas fa-wine-glass"></i> Wine pairing available (+$75)</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-option">
+                        <div class="menu-header">
+                            <h3>Plant-Forward Menu</h3>
+                            <span class="price">$115</span>
+                        </div>
+                        <p class="menu-description">Our celebrated vegetarian menu showcasing the artistry possible with plant-based ingredients</p>
+                        <div class="menu-details">
+                            <span><i class="fas fa-clock"></i> 2 hours</span>
+                            <span><i class="fas fa-leaf"></i> Vegan options available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dietary-info">
+                    <p><strong>Dietary Accommodations:</strong> We gladly accommodate allergies, dietary restrictions, and special requests with advance notice. Our culinary team takes pride in creating memorable experiences for all guests.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chef" class="chef-section">
+            <div class="container">
+                <div class="chef-content">
+                    <div class="chef-image">
+                        <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" alt="Chef Jean Baptiste">
+                    </div>
+                    <div class="chef-bio">
+                        <h2>Chef Jean Baptiste</h2>
+                        <p class="chef-title">Executive Chef & Owner</p>
+                        <p>With over two decades of culinary excellence, Chef Baptiste brings his French training and global perspective to create unforgettable dining experiences. Trained under Michelin-starred chefs in Lyon and Paris, he opened Bistro Elegante with a vision to celebrate both tradition and innovation.</p>
+                        
+                        <div class="chef-achievements">
+                            <h4>Accolades & Recognition</h4>
+                            <ul>
+                                <li>James Beard Award Winner - Outstanding Chef (2024)</li>
+                                <li>Michelin Star recipient (2020-2024)</li>
+                                <li>Food & Wine "Best New Chef" (2018)</li>
+                                <li>Certified Master Chef, Culinary Institute of America</li>
+                                <li>Author of "Seasonal Harmony" cookbook (2022)</li>
+                            </ul>
+                        </div>
+
+                        <div class="chef-philosophy">
+                            <blockquote>
+                                "Cooking is not just about feeding the body—it's about nourishing the soul. Every dish we serve tells a story of the farmers who grew the ingredients, the traditions that inspire us, and the future we're creating together."
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about-section">
             <div class="container">
-                <h2>Our Story</h2>
-                <p>Founded in 1995, Bistro Elegante has been serving gourmet cuisine with a modern twist. Our chef, with over 20 years of international experience, creates dishes that blend traditional techniques with innovative flavors.</p>
+                <div class="section-header">
+                    <h2>Our Story</h2>
+                    <p>A legacy of culinary excellence in the heart of Manhattan</p>
+                </div>
+                
+                <div class="story-content">
+                    <div class="story-text">
+                        <p>Founded in 1995 by Chef Jean Baptiste and his wife Marie, Bistro Elegante began as a dream to create an intimate space where culinary artistry could flourish. What started as a 20-seat neighborhood gem has evolved into Manhattan's most sought-after dining destination, while maintaining its commitment to personalized service and exceptional cuisine.</p>
+                        
+                        <p>Our philosophy centers on the belief that great dining experiences are created through the harmony of exceptional ingredients, masterful technique, and genuine hospitality. We work exclusively with local farms and artisanal producers who share our commitment to quality and sustainability.</p>
+
+                        <div class="restaurant-stats">
+                            <div class="stat">
+                                <h4>29</h4>
+                                <p>Years of Excellence</p>
+                            </div>
+                            <div class="stat">
+                                <h4>45</h4>
+                                <p>Intimate Seats</p>
+                            </div>
+                            <div class="stat">
+                                <h4>12</h4>
+                                <p>Master Chefs</p>
+                            </div>
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Local Partners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="gallery">
-                    <img src="https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg" alt="Restaurant interior">
-                    <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" alt="Chef preparing dish">
-                    <img src="https://static1.squarespace.com/static/516411ffe4b032c4bb3b62e3/55ae9200e4b0c3f14efb3ccc/5f5b83d680f28956203c8216/1745504458604/amirali-mirhashemian-R02KgL5Ti3Y-unsplash.jpg?format=1500w" alt="Signature dish">
+                    <div class="gallery-item">
+                        <img src="https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg" alt="Main dining room with elegant table settings">
+                        <div class="gallery-caption">
+                            <h4>Main Dining Room</h4>
+                            <p>Intimate 45-seat space with custom artwork</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://static1.squarespace.com/static/516411ffe4b032c4bb3b62e3/55ae9200e4b0c3f14efb3ccc/5f5b83d680f28956203c8216/1745504458604/amirali-mirhashemian-R02KgL5Ti3Y-unsplash.jpg?format=1500w" alt="Signature dish plating">
+                        <div class="gallery-caption">
+                            <h4>Culinary Artistry</h4>
+                            <p>Every plate is a masterpiece</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=612x612&w=0&k=20&c=q9tScD01SPtN5QNAYgWG-ot4n_4hZXOgMStuFgmBFa8=" alt="Chef's table experience">
+                        <div class="gallery-caption">
+                            <h4>Chef's Table</h4>
+                            <p>Exclusive 6-seat culinary theater</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Private Events & Special Occasions</h2>
+                    <p>Create unforgettable memories in our exclusive spaces</p>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-option">
+                        <h3><i class="fas fa-utensils"></i> Chef's Table Experience</h3>
+                        <p>Intimate 6-seat dining experience in our kitchen with direct interaction with Chef Baptiste. Perfect for special celebrations and culinary enthusiasts.</p>
+                        <span class="event-price">$295 per person</span>
+                    </div>
+
+                    <div class="event-option">
+                        <h3><i class="fas fa-wine-glass"></i> Private Dining Room</h3>
+                        <p>Elegant 12-person private space with dedicated service team and customizable menu options. Ideal for business dinners and intimate gatherings.</p>
+                        <span class="event-price">$175 per person minimum</span>
+                    </div>
+
+                    <div class="event-option">
+                        <h3><i class="fas fa-birthday-cake"></i> Full Restaurant Buyout</h3>
+                        <p>Complete exclusivity for your special event. Our entire team dedicated to creating your perfect celebration for up to 45 guests.</p>
+                        <span class="event-price">Starting at $8,500</span>
+                    </div>
+
+                    <div class="event-option">
+                        <h3><i class="fas fa-graduation-cap"></i> Culinary Classes</h3>
+                        <p>Learn from our master chefs in hands-on cooking classes. Available for groups of 8-16 participants with take-home recipes.</p>
+                        <span class="event-price">$125 per person</span>
+                    </div>
+                </div>
+
+                <div class="events-contact">
+                    <p>For private events and special requests, contact our Events Director at <a href="mailto:events@bistroelegante.com">events@bistroelegante.com</a> or call (212) 555-DINE.</p>
                 </div>
             </div>
         </section>
 
         <section id="reservations" class="reservation-section">
             <div class="container">
-                <h2>Make a Reservation</h2>
-                <form id="reservation-form" action="https://formspree.io/f/xldleenz" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="section-header">
+                    <h2>Reserve Your Experience</h2>
+                    <p>Reservations are highly recommended and can be made up to 60 days in advance</p>
+                </div>
+
+                <div class="reservation-info">
+                    <div class="booking-policies">
+                        <h3>Reservation Policies</h3>
+                        <ul>
+                            <li>Reservations accepted up to 60 days in advance</li>
+                            <li>Credit card required to secure reservation</li>
+                            <li>48-hour cancellation policy</li>
+                            <li>Dietary restrictions accommodated with advance notice</li>
+                            <li>Smart casual dress code enforced</li>
+                            <li>Children under 12 welcome until 8:00 PM</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+
+                    <div class="contact-reservation">
+                        <h3>Preferred Booking Methods</h3>
+                        <div class="booking-options">
+                            <div class="booking-method">
+                                <i class="fas fa-phone"></i>
+                                <h4>Call Direct</h4>
+                                <p>(212) 555-DINE</p>
+                                <span>Monday-Sunday, 10AM-6PM</span>
+                            </div>
+                            <div class="booking-method">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email Reservations</h4>
+                                <p>reservations@bistroelegante.com</p>
+                                <span>Response within 4 hours</span>
+                            </div>
+                            <div class="booking-method">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4>Online Booking</h4>
+                                <p>OpenTable Partnership</p>
+                                <span>Instant confirmation</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <form id="reservation-form" class="reservation-form" action="https://formspree.io/f/xldleenz" method="POST">
+                    <h3>Quick Reservation Request</h3>
+                    <p>Submit your preferences and we'll contact you within 2 hours to confirm availability</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Party Size *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select party size</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7+">7+ Guests (Private Event)</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="time">Time:</label>
-                        <input type="time" id="time" name="time" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
                     </div>
+
                     <div class="form-group">
-                        <label for="guests">Number of Guests:</label>
-                        <select id="guests" name="guests" required>
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                            <option value="5">5 People</option>
-                            <option value="6">6 People</option>
-                            <option value="7+">7+ People</option>
+                        <label for="menu-preference">Menu Preference</label>
+                        <select id="menu-preference" name="menu-preference">
+                            <option value="">No preference</option>
+                            <option value="chef-tasting">Chef's Tasting Menu</option>
+                            <option value="seasonal">Seasonal Menu</option>
+                            <option value="plant-forward">Plant-Forward Menu</option>
+                            <option value="chef-table">Chef's Table Experience</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="message">Special Requests:</label>
-                        <textarea id="message" name="message" rows="3"></textarea>
+                        <label for="occasion">Special Occasion</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">None</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="proposal">Proposal</option>
+                            <option value="business">Business Dinner</option>
+                            <option value="celebration">Celebration</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests or Dietary Restrictions</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Please let us know about any allergies, dietary restrictions, or special requests..."></textarea>
                     </div>
                     
-                    <!-- Formspree hidden fields -->
-                    <input type="hidden" name="_subject" value="New Reservation at Bistro Elegante">
-                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                    <input type="hidden" name="_subject" value="Reservation Request - Bistro Elegante">
+                    <input type="hidden" name="_next" value="https://bistroelegante.com/reservation-confirmation">
                     <input type="text" name="_gotcha" style="display:none">
                     
-                    <button type="submit" class="btn">Book Table</button>
+                    <button type="submit" class="btn btn-primary">Submit Reservation Request</button>
+                    <p class="form-note">* Required fields. We'll contact you within 2 hours to confirm your reservation.</p>
                 </form>
             </div>
         </section>
 
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-info">
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Gourmet Street, Foodville, FV 12345</p>
+                <div class="section-header">
+                    <h2>Visit Bistro Elegante</h2>
+                    <p>Located in the heart of Manhattan's Upper East Side</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>847 Madison Avenue<br>New York, NY 10021<br>Between 70th & 71st Street</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Reservations</h4>
+                                <p>(212) 555-DINE<br>(212) 555-3463</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@bistroelegante.com<br>events@bistroelegante.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Tuesday - Saturday: 5:00 PM - 11:00 PM<br>Sunday: 5:00 PM - 10:00 PM<br>Closed Mondays</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fas fa-phone"></i>
-                        <p>(555) 123-4567</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-envelope"></i>
-                        <p>info@bistroelegante.com</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-clock"></i>
-                        <p>Open Tuesday-Sunday: 5PM-11PM</p>
+
+                    <div class="location-details">
+                        <h3>Getting Here</h3>
+                        <div class="transport-info">
+                            <div class="transport-method">
+                                <i class="fas fa-subway"></i>
+                                <p><strong>Subway:</strong> 6 train to 68th St-Hunter College (3 min walk)</p>
+                            </div>
+                            <div class="transport-method">
+                                <i class="fas fa-car"></i>
+                                <p><strong>Valet:</strong> Complimentary valet parking available nightly</p>
+                            </div>
+                            <div class="transport-method">
+                                <i class="fas fa-taxi"></i>
+                                <p><strong>Taxi/Uber:</strong> Direct drop-off at 847 Madison Avenue</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <h3>Follow Our Journey</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="social-handle">@BistroElegante • #BistroElegante</p>
                 </div>
             </div>
         </section>
@@ -143,10 +487,79 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Bistro Elegante. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2024 Bistro Elegante. All rights reserved.</p>
+                    <p>847 Madison Avenue, New York, NY 10021 • (212) 555-DINE</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/press">Press Kit</a>
+                    <a href="/careers">Careers</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Enhanced JavaScript for sophisticated interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('show');
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Set minimum date for reservations (today)
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+
+            // Form validation and enhancement
+            const form = document.getElementById('reservation-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // Add any custom validation here
+                    console.log('Form submitted');
+                });
+            }
+
+            // Lazy loading for images
+            const images = document.querySelectorAll('img');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+    </script>
 </body>
 </html>
